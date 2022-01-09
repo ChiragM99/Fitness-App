@@ -1,0 +1,162 @@
+body {
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+ }
+
+ .navbar{
+   width: 100%;
+   overflow: hidden;
+   height: 150px;
+   line-height: 70px;
+   background: #fff;
+   border-bottom: 2px solid blue;
+ }
+ .logo{
+   width:190px;
+   float: left;
+ }
+ .container{
+   width: 90%;
+   margin: 0 auto;
+
+ }
+ .menu{
+   float: right;
+   margin-top: 40px;
+ }
+ .menu li{
+   float:left;
+   width: 120px;
+   height: 90px;
+   line-height: 70px;
+   text-align: center;
+   list-style: none;
+ }
+
+ .menu li a{
+   color: #000;
+   text-decoration: none;
+   font-family: cursive;
+   font-style: italic;
+   text-transform: uppercase;
+ }
+
+ .menu li:hover{
+   background: #3322bf;
+ }
+
+ .menu li a:hover{
+   color: #fff;
+ }
+
+.button{
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 30px 10px 0 0px;
+  cursor: pointer;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+ #container {
+ width: auto;
+ margin: 0 20px 0 20px; /* top right bottom left */
+ padding: 0;
+ background-color: #fff;
+ font-family: Verdana;
+ }
+ #container header {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+
+
+ }
+ #container #Breakfast {
+ width: 33%;
+ float: left;
+  text-align: center;
+  border: 2px solid grey;
+
+ }
+ #container #Meal {
+ width: 65%;
+ float: right;
+ margin: 0;
+ padding: 0;
+
+ }
+ #Meal #Lunch {
+ width: 48%;
+ float: left;
+ text-align: center;
+ border: 2px solid grey;
+ }
+ #Meal #Dinner {
+ width: 48%;
+ float: right;
+  text-align: center;
+  border: 2px solid grey;
+ }
+
+ .dropdown {
+   float: left;
+   overflow: hidden;
+ }
+ .dropdown .dropbtn {
+   font-size: 16px;
+   color: black;
+   background-color: white;
+      margin-top: 40px;
+      float:left;
+      line-height: 70px;
+      text-align: center;
+      list-style: none;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   min-width: 120px;
+   top: 130px;
+  }
+
+ .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+
+ .dropdown-content a:hover {
+   background-color: #3322bf;
+   color: white;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }

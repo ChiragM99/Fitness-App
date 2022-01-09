@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> 3HealthyWay </title>
+  <link href="style2.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class ="navbar">
+    <div class = "container">
+      <div class ="logo">
+        <img src ="1.jpg" alt="logo" class="logo">
+      </div>
+    <div class="links">
+      <ul class="menu">
+        <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-user"></i> Login</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-user"></i> Register</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  </div>
+<br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="2.jpg" height="500" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="3.jpg" height="500" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="4.jpg" height="500" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<div class ="text"><h1>Welcome To 3HealthyWay</h1></div>
+  <div class ="search">
+    <input type="text" placeholder="Search Food..">
+    <button type="submit"><i class="fa fa-search"></i></button>
+
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+</body>
